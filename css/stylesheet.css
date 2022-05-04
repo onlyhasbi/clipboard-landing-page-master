@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Dark-Grayish-Blue);
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-size: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+}
+
+span,
+img,
+a,
+*::before,
+*::after {
+  display: block;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* --- Button Component --- */
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 1.5rem 0;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  border-radius: 3rem;
+}
+
+.btn:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.btn::after {
+  content: "";
+  width: 100%;
+  border: solid transparent;
+  border-radius: 3rem;
+  border-width: 0 0 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: 0;
+  z-index: -1;
+}
+
+.ios {
+  background: var(--Strong-Cyan);
+  color: #fff;
+  box-shadow: 0 8px 15px 0 hsla(171, 66%, 44%, 0.5);
+  position: relative;
+}
+
+.ios::after {
+  background-color: hsl(170, 65.6%, 37.6%);
+}
+
+.mac {
+  background: var(--Light-Blue);
+  color: #fff;
+  box-shadow: 0 8px 15px 0 hsla(233, 100%, 69%, 0.5);
+  position: relative;
+}
+
+.mac::after {
+  background-color: hsl(232, 65.3%, 58.2%);
+}
+
+/* --- List Component --- */
+
+.list__title {
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.list__item + .list__item {
+  margin-top: 5rem;
+}
+
+/* --- Layout --- */
+
+.container {
+  width: 90%;
+  padding-top: 5rem;
+  margin: 0 auto;
+}
+
+/* --- Header Section --- */
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.header__title {
+  margin-bottom: 2rem;
+}
+
+.header__image {
+  padding: 5rem 0;
+}
+
+.header__button {
+  margin-top: 5rem;
+}
+
+/* --- Main Feature Track --- */
+.feature__item {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.feature__title {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.feature__image {
+  padding: 8rem 0;
+}
+
+.clipboard,
+.clipboard .feature__image {
+  padding-bottom: 0;
+}
+
+.workflow .list {
+  padding-top: 7.5rem;
+  padding-bottom: 0;
+}
+
+.workflow .item__title {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+.workflow .item__image {
+  width: 5rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.workflow {
+  padding-bottom: 0;
+}
+
+/* --- Footer --- */
+
+.footer__brand {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.footer__brand .list__item {
+  padding: 1.5rem;
+}
+
+.footer__brand .list__item img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer__download .item__title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.footer__button {
+  margin-top: 5rem;
+}
+
+.footer__download {
+  padding-top: 0;
+  padding-bottom: 20rem;
+}
+
+.footer__nav {
+  background-color: #f5f6f8;
+  padding: 5rem 0;
+}
+
+.footer__logo img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.footer__nav .navigation {
+  margin: 3.5rem 0;
+}
+
+.footer__nav .list__item + .list__item {
+  margin-top: 2rem;
+}
+
+.footer__nav .list__link {
+  font-size: 1.35rem;
+}
+
+.footer__nav .social__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.social__media > .list__item + .list__item {
+  margin: 0;
+}
+
+.social__media .fa-brands {
+  font-size: 2rem;
+}

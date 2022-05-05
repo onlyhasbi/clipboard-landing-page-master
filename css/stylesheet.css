@@ -569,6 +569,12 @@ ul {
     margin-right: 13.5rem;
   }
 
+  .footer__nav {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+  }
+
   .footer__logo img {
     width: 5.5rem;
     height: 5.5rem;
@@ -607,10 +613,10 @@ ul {
   }
 
   .footer__nav .social__media {
-    gap: 2.6rem;
+    gap: 1.8rem;
   }
 
   .social__media .fa-brands {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
